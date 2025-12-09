@@ -1,0 +1,75 @@
+.why-choose-us {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    background-color: var(--color-background);
+    /* Creamy background */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xl);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.feature-text {
+    flex: 1;
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.feature-title {
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.feature-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.feature-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-img-item {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    /* The uploaded images are organic shapes, so explicit border-radius might not be needed if images have transparency. 
+     If they have backgrounds, this is fine. */
+}
+
+@media (min-width: 768px) {
+    .feature-row {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .feature-row.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .feature-text {
+        text-align: left;
+        padding: var(--spacing-xl);
+    }
+}

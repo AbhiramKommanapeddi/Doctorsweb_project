@@ -1,0 +1,123 @@
+.connect-section {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.connect-header {
+    margin-bottom: var(--spacing-2xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connect-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+    /* Or card bg if needed, simplified for now */
+}
+
+.connect-visual {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.connect-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.connect-form-wrapper {
+    flex: 1;
+    background-color: #FDF8F0;
+    /* Light card bg matching design area? Or transparent */
+    padding: var(--spacing-xl);
+    border-radius: 20px;
+    border: 1px solid #E0E0E0;
+    /* Subtle border */
+    text-align: left;
+}
+
+.connect-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    font-size: 1rem;
+    color: #333;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #3A643B;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.send-message-btn {
+    background-color: #3A643B;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: var(--spacing-md);
+    transition: background-color 0.2s;
+}
+
+.send-message-btn:hover {
+    background-color: #2e502f;
+}
+
+@media (min-width: 768px) {
+    .connect-container {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .form-row {
+        flex-direction: row;
+    }
+}

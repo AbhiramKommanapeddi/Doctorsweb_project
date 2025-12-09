@@ -1,0 +1,45 @@
+:root {
+  /* Colors */
+  --color-primary: #3A643B;
+  /* Deep Green */
+  --color-secondary: #FFF7E2;
+  /* Cream/Beige Background */
+  --color-secondary-light: #FDF8EE;
+  /* Lighter Cream */
+  --color-accent: #EAF2EA;
+  /* Light Green Accent */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-white: #FFFFFF;
+  --color-border: #D1D1D1;
+
+  /* Typography */
+  --font-family-main: 'Outfit', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}

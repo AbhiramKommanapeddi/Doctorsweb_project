@@ -1,0 +1,126 @@
+.circle-section {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    background-color: var(--color-background);
+    text-align: center;
+    overflow: hidden;
+}
+
+.circle-header {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.circle-title {
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 700;
+}
+
+.circle-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+}
+
+.circle-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    width: 100%;
+    max-width: 500px;
+}
+
+.step-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: var(--color-white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.step-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    border-color: var(--color-primary-light);
+}
+
+.step-heading {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+}
+
+.step-prefix {
+    color: var(--color-text-primary);
+}
+
+.step-description {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.circle-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.visual-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-bg-blob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    max-width: 800px;
+    z-index: 1;
+    /* The uploaded blob seems to have its own opacity/color, so no opacity needed here unless user wants it fainter */
+}
+
+.circle-img-main {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 960px) {
+    .circle-content-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .steps-list {
+        flex: 0.8;
+    }
+
+    .circle-visual {
+        flex: 1.2;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,105 @@
+.header-container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-secondary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.top-bar {
+    background-color: var(--color-secondary-light);
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Specific Top Bar for "Register Yourself" if needed or use the one above */
+/* Specific Top Bar */
+.offer-banner {
+    background-color: #2D2D2D;
+    /* Dark Grey/Black */
+    color: var(--color-white);
+    padding: 10px var(--spacing-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-md);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.offer-banner button {
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.offer-banner button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    background-color: #FFFDF0;
+    /* Cream background matching screenshot */
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #3A643B;
+    /* Amrutam Green */
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    /* Wider spacing */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: #4A4A4A;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #3A643B;
+}
+
+/* Remove the row layout media query to force centered stack */
+@media (min-width: 768px) {
+    .navbar {
+        /* Ensure it matches the mobile style (centered column) */
+        flex-direction: column;
+        justify-content: center;
+        padding: var(--spacing-md) 0;
+    }
+
+    .logo {
+        margin-bottom: var(--spacing-sm);
+    }
+}

@@ -1,0 +1,124 @@
+.app-features-section {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+/* --- Navigation Button Styles --- */
+.features-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: 80px;
+    /* Increased spacing as requested */
+    flex-wrap: wrap;
+    /* Safety for mobile */
+}
+
+.feature-tab {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: transparent;
+    border: 1px solid #8A8A8A;
+    /* Default gray outline */
+    color: #3A3A3A;
+}
+
+.feature-tab.active {
+    background-color: #3A643B;
+    /* Dark Green */
+    color: white;
+    border-color: #3A643B;
+    box-shadow: 0 4px 10px rgba(58, 100, 59, 0.2);
+}
+
+.feature-tab:hover:not(.active) {
+    border-color: #3A643B;
+    background-color: rgba(58, 100, 59, 0.05);
+}
+
+/* -------------------------------- */
+
+.features-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    max-width: 1200px;
+    margin: 0 auto var(--spacing-3xl);
+    justify-content: center;
+}
+
+.feature-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    flex: 1;
+}
+
+.feature-title,
+.feature-item-title {
+    /* Handling both just in case */
+    font-size: var(--font-size-xl);
+    color: #3A643B;
+    /* Dark Green */
+    font-weight: 700;
+    margin: 0;
+}
+
+.main-title {
+    font-size: var(--font-size-2xl);
+    margin-top: var(--spacing-md);
+}
+
+.feature-mockup img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.main-mockup img {
+    max-width: 320px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.features-action {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.join-now-btn {
+    background-color: #3A643B;
+    color: white;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s;
+    box-shadow: 0 5px 15px rgba(58, 100, 59, 0.3);
+}
+
+.join-now-btn:hover {
+    transform: translateY(-2px);
+    background-color: #2e502f;
+}
+
+@media (min-width: 992px) {
+    .features-showcase {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .center-column {
+        margin: 0 var(--spacing-md);
+    }
+}
